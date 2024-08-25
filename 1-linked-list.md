@@ -3,7 +3,10 @@
 - [back to home](https://github.com/filipecancio/leetcode-exercises)
 - [Leetcode Description] (https://leetcode.com/problems/middle-of-the-linked-list/)
 
-### Kotlin solution
+### Solutions
+<details>
+  <summary>Kotlin solution </summary>
+    
 ```kotlin
 /**
  * Example:
@@ -27,7 +30,12 @@ class Solution {
     }
 }
 ```
-### Python solution
+    
+</details>
+
+<details>
+  <summary>Python solution </summary>
+
 ```python3
 # Definition for singly-linked list.
 # class ListNode:
@@ -50,3 +58,37 @@ class Solution:
             j = j.next
         return j
 ```
+
+</details>
+
+<details>
+  <summary>Dart solution </summary>
+
+
+```dart
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *   int val;
+ *   ListNode? next;
+ *   ListNode([this.val = 0, this.next]);
+ * }
+ */
+class Solution {
+  ListNode? middleNode(ListNode? head) {
+        ListNode? i = head;
+        ListNode? j = head;
+
+        while (i?.next?.next != null) {
+            j = j?.next;
+            i = i?.next?.next;
+        }
+
+        if( i?.next != null) j = j?.next;
+
+        return j;
+  }
+}
+```
+
+</details>
