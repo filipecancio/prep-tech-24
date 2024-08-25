@@ -4,4 +4,4 @@
 Bringin solutions from #1 
 
 ### Exercises
-- [876. Middle of the Linked List]()
+- [876. Middle of the Linked List](./1-linked-list.md)
