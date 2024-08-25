@@ -2,6 +2,7 @@
 ### Important links
 - [back to home](https://github.com/filipecancio/leetcode-exercises)
 - [Leetcode Description] (https://leetcode.com/problems/middle-of-the-linked-list/)
+- [Related issue](https://github.com/filipecancio/leetcode-exercises/issues/1)
 
 ### Solutions
 <details>
