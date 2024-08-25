@@ -27,3 +27,26 @@ class Solution {
     }
 }
 ```
+### Python solution
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head == None or head.next == None:
+            return head
+
+        i = head
+        j = head
+
+        while i.next != None and i.next.next != None:
+            j = j .next
+            i = i.next.next
+
+        if i.next != None:
+            j = j.next
+        return j
+```
